@@ -52,7 +52,7 @@ tasks.withType(Test) {
     }
 }
 
-task tests(type: Test) {
+task pageObjectTests(type: Test) {
     useJUnitPlatform{
         includeTags("page_objects_test")
     }
