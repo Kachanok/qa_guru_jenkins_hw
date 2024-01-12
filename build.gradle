@@ -60,12 +60,6 @@ task smoke_tests(type: Test) {
     }
 }
 
-task test(type: Test) {
-    useJUnitPlatform{
-        includeTags("tests")
-    }
-}
-
 task negative_tests(type: Test) {
     useJUnitPlatform{
         includeTags("negative")
