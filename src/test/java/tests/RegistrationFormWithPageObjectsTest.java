@@ -12,7 +12,8 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
 
-    @Tag("page_objects_test")
+
+    @Tag("tests")
     @Test
     @DisplayName("Заполнить все поля формы Practice")
     void fillFormTest() {
@@ -49,7 +50,8 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
                 .checkResult("State and City", "Uttar Pradesh Lucknow");
     }
 
-    @Tag("page_objects_test")
+
+    @Tag("smoke")
     @Test
     @DisplayName("Заполнить обязательные поля формы Practice")
     void minimalDataTest() {
@@ -71,7 +73,8 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
 
     }
 
-    @Tag("page_objects_test")
+
+    @Tag("negative")
     @Test
     @DisplayName("Заполнить обязательные поля формы Practice частично")
     void negativeTest() {
