@@ -59,8 +59,8 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
         //заполнение обязательных полей
 
         registrationPage.openPage()
-                .setFirstName("Ann")
-                .setLastName("Smith")
+ //               .setFirstName("Ann")
+ //               .setLastName("Smith")
                 .setGender("Female")
                 .setEmail("annsmth@yes.com")
                 .setUserNumber("8800222336")
@@ -81,7 +81,7 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         registrationPage.openPage()
-//                .setFirstName("Ann")
+                .setFirstName("Ann")
                 .setLastName("Smith")
                 .setGender("Female")
                 .pressSubmit()
