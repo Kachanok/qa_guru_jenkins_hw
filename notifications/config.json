@@ -1,0 +1,17 @@
+{
+  "base": {
+    "project": "${JOB_NAME}",
+    "environment": "qa.guru",
+    "comment": "must see here @Kachanok ",
+    "reportLink": "${BUILD_URL}",
+    "language": "en",
+    "messenger": "telegram",
+    "allureFolder": "allure-report",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6479051305:AAE4D9z0UhJHXjzRcAtvyaFKAHo5sKWZGJ8",
+    "chat": "-1001747541997",
+    "replyTo": ""
+  }
+}

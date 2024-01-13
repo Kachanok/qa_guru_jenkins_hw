@@ -1,0 +1,7 @@
+Here is the token for bot Aller bot @kachanok_testing_bot:
+
+6479051305:AAE4D9z0UhJHXjzRcAtvyaFKAHo5sKWZGJ8
+
+https://api.telegram.org/6479051305:AAE4D9z0UhJHXjzRcAtvyaFKAHo5sKWZGJ8/getUpdates
+
+-1001747541997
