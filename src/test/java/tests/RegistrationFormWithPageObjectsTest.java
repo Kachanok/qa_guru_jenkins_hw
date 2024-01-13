@@ -81,7 +81,7 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         registrationPage.openPage()
-                .setFirstName("Ann")
+//                .setFirstName("Ann")
                 .setLastName("Smith")
                 .setGender("Female")
                 .pressSubmit()
