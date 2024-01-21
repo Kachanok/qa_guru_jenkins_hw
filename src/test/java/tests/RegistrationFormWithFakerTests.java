@@ -1,11 +1,9 @@
 package tests;
 
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
-public class RegistrationFormWithFakerTests {
+public class RegistrationFormWithFakerTests extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
     TestData data = new TestData();
@@ -13,8 +11,6 @@ public class RegistrationFormWithFakerTests {
 
     @Test
     void fillFormTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
 
 
         //заполнение всех полей
@@ -50,7 +46,7 @@ public class RegistrationFormWithFakerTests {
 
     @Test
     void minimalDataTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+
 
         //заполнение обязательных полей
 
@@ -71,7 +67,7 @@ public class RegistrationFormWithFakerTests {
 
     @Test
     void negativeTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+
 
 
         registrationPage.openPage()

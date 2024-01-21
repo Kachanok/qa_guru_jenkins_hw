@@ -1,7 +1,5 @@
 package tests;
 
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Tag;
@@ -17,7 +15,7 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
     @Test
     @DisplayName("Заполнить все поля формы Practice")
     void fillFormTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+
         //заполнение всех полей формы
         registrationPage.openPage()
                 .setFirstName("Ann")
@@ -55,7 +53,7 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
     @Test
     @DisplayName("Заполнить обязательные поля формы Practice")
     void minimalDataTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+
         //заполнение обязательных полей
 
         registrationPage.openPage()
@@ -78,7 +76,7 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
     @Test
     @DisplayName("Заполнить обязательные поля формы Practice частично")
     void negativeTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+
 
         registrationPage.openPage()
                 .setFirstName("Ann")
