@@ -57,7 +57,7 @@ public class TestBase {
             Attach.browserConsoleLogs();
         }
 
-        if (Configuration.remote.equals(false)){
+        if (webDriverConfig.isRemote()){
             Attach.addVideo();
         }
 
