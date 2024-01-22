@@ -29,7 +29,7 @@ public class TestBase {
         Configuration.browserSize = webDriverConfig.browserSize();
         Configuration.browserVersion = webDriverConfig.browserVersion();
         Configuration.pageLoadStrategy = "eager";
-        SelenideLogger.addListener("allure", new AllureSelenide());
+
         if (webDriverConfig.isRemote()) {
             Configuration.remote = String.valueOf(webDriverConfig.remoteUrl());
             DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -42,7 +42,7 @@ public class TestBase {
     }
 
     @BeforeEach
-    static void beforeEach() {
+    void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
     }
@@ -57,7 +57,7 @@ public class TestBase {
             Attach.browserConsoleLogs();
         }
 
-        if (Configuration.remote.equals(true)){
+        if (Configuration.remote.equals(false)){
             Attach.addVideo();
         }
 
